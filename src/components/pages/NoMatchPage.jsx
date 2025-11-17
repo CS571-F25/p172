@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router";
 
-function NoMatch() {
+function NoMatchPage() {
     return (
         <div>
             <h2>That's a 404.</h2>
@@ -13,4 +13,4 @@ function NoMatch() {
     );
 }
 
-export default NoMatch;
+export default NoMatchPage;
