@@ -1,11 +1,11 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif; 
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #eff7cf;
+  background-color: #420c14;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,10 +26,6 @@ a:hover {
   color: #535bf2;
 }
 
-h2 {
-  font-size: 1.5em;
-}
-
 body {
   margin: 0;
   padding: 4rem;
@@ -37,11 +33,18 @@ body {
   place-items: top;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #F6F2EE;
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; 
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3em;
   line-height: 1.1;
+  font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive; 
+}
+
+h2 {
+  font-size: 1.8em;
 }
 
 button {
@@ -52,16 +55,31 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+.btn-primary {
+  background-color: #732c2c !important;
+  border-color: #9e4d4d !important;
+}
+.btn-secondary {
+  background-color: #708a5b
+}
+.btn-secondary:hover {
+  background-color: #708a5b
+}
+
 button:hover {
-  border-color: #646cff;
+  border-color: #7e8a74;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+hr {
+  border-color: #420c14;
+  color: #420c14;
+  background-color: #420c14;
 }
 .Row {
   display: flex;
@@ -69,9 +87,14 @@ button:focus-visible {
   height: 32px;
 }
 
+.navbar,
+.navbar-default {
+    background-color: #420c14 !important;
+}
+
 .btn-outline-primary {
   background-color: transparent;
-  border-color: #ffffff;
+  border-color: transparent;
 }
 
 @media (prefers-color-scheme: light) {

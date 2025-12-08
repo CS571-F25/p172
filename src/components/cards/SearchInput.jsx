@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react"
-import { FormControl, Form, Button } from "react-bootstrap";
+import { FormControl, Form, Button, Stack } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { FaSearch } from "react-icons/fa";
 
@@ -17,12 +17,12 @@ function SearchInput (props) {
 
     return <>
         <Form className="Row">
-            <Form.Control onKeyPress={event => {
+            <Form.Control style={{width: "50rem"}} onKeyPress={event => {
                             if (event.key === "Enter") {
                                 handleSearchButtonPress();
                             }}} 
             ref={searchRef} type="text" placeholder="Search for a recipe..." defaultValue={mountValue}/>
-            <Button style={{width: "13rem"}} onClick={handleSearchButtonPress}><div><FaSearch/> Search by Name</div></Button>
+            <Button style={{minWidth: "10rem"}} onClick={handleSearchButtonPress}><div><FaSearch/> Search by Name</div></Button>
         </Form>
     </>
 }

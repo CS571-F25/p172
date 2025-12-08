@@ -18,7 +18,7 @@ function RatingDisplay (props) {
     return <>
         {
             isRated ?
-            <p style={{color: "goldenrod"}}>
+            <div style={{color: "goldenrod"}}>
                 {
                     rating >= 1 ?
                     <FaStar/>
@@ -49,7 +49,7 @@ function RatingDisplay (props) {
                     :
                     <FaRegStar/>
                 }
-            </p>
+            </div>
             :
             <></>
         }

@@ -172,19 +172,19 @@ function SearchPage () {
                 }
                 {
                     activeCatFilter?
-                        <Button onClick={() => setActiveCatFilter("")}>{activeCatFilter}</Button>
+                        <Button variant={"secondary"} onClick={() => setActiveCatFilter("")}>{activeCatFilter}</Button>
                     :
                     <></>
                 }
                 {
                     activeCuisFilter?
-                        <Button onClick={() => setActiveCuisFilter("")}>{activeCuisFilter}</Button>
+                        <Button variant={"secondary"} onClick={() => setActiveCuisFilter("")}>{activeCuisFilter}</Button>
                     :
                     <></>
                 }
                 {
                     activeRatingFilter?
-                        <Button onClick={() => setActiveRatingFilter("")}>{activeRatingFilter}</Button>
+                        <Button variant={"secondary"} onClick={() => setActiveRatingFilter("")}>{activeRatingFilter}</Button>
                     :
                     <></>
                 }

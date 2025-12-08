@@ -31,7 +31,7 @@ function FavoritesPage () {
         <div>
             <h1>Favorites</h1>
             <Container fluid>
-                <Row>
+                <Row className="gy-3">
                     {
                         favoriteMeals.length != 0 ?
                         favoriteMeals.map((r, i) => 

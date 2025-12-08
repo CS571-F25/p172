@@ -28,7 +28,7 @@ function FavoriteCard (props) {
     }
 
     return <>
-        <Card style={{margin: ".2rem", height: "16rem", justifyContent: "center"}}>
+        <Card style={{margin: ".2rem", minHeight: "18rem", minWidth: "36rem", justifyContent: "center"}}>
             <div className="Row" style={{margin: ".5rem"}}>
                 <Image  onClick={go} class="d-flex p-2 bd-highlight" className="cursor-pointer-on-hover" src={props.strMealThumb + "/medium"} alt={`A picture of ${props.strMeal}`} style={{height: "12rem"}} rounded/>
                 <div style={{margin: "1rem"}}>
@@ -39,17 +39,17 @@ function FavoriteCard (props) {
                         <p>Cuisine: {props.strArea}</p>
                         <p>Requires: {ingredientsText}</p>
                     </div>
-                    <div class="align-self-end">
+                    <div>
                         {
                             alertVisible ?
                             <Alert variant={"danger"}style={{zIndex: 1000}}>
                                 Are you sure you want to remove {props.strMeal} from your favorites?
                                 <br/>
-                                <Button variant={"danger"} onClick={() => props.unfavorite(props.idMeal)}>I'm sure</Button>
+                                <Button variant={"primary"} onClick={() => props.unfavorite(props.idMeal)}>I'm sure</Button>
                                 <Button variant={"secondary"} onClick={() => setAlertVisible(false)}>Nevermind</Button>
                             </Alert>
                             :
-                            <Button onClick={() => setAlertVisible(true)}><div><FaHeart/> Remove from Favorites</div></Button>
+                            <Button variant={"secondary"} onClick={() => setAlertVisible(true)}><div><FaHeart style={{color: "#ffcbbf"}}/> Remove from Favorites</div></Button>
                         }
                     </div>
                 </div>

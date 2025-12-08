@@ -12,12 +12,11 @@ function Layout(props) {
 
     return <>
         <div>
-            <Navbar bg="dark" variant="dark" fixed="top">
+            <Navbar bg="dark" data-bs-theme="dark" fixed="top">
                 <Container>
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/"><div><FaHome/> Home</div></Nav.Link>
                         <Nav.Link as={Link} to="/favorites"><div><FaHeart/> Favorites</div></Nav.Link>
-                        <Nav.Link as={Link} to="/search"><div><FaSearch/> Search</div></Nav.Link>
                         <NavDropdown title="Categories">
                             {
                                 props.categories.map(cat => {
@@ -25,6 +24,7 @@ function Layout(props) {
                                 })
                             }
                         </NavDropdown>
+                        <Nav.Link as={Link} to="/search"><div><FaSearch/> Search</div></Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

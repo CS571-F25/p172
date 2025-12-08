@@ -23,7 +23,7 @@ function FavoriteButton (props) {
         }
     }
 
-    return <Button onClick={() => handleFavorite(props.id)}>{!favorited ? <div><FaRegHeart/> Add to Favorites</div> : <div><FaHeart/> Remove from Favorites</div>}</Button>
+    return <Button style={{maxWidth: "13rem"}} variant={"secondary"} onClick={() => handleFavorite(props.id)}>{!favorited ? <div><FaRegHeart/> Add to Favorites</div> : <div><FaHeart style={{color: "#ffcbbf"}}/> Remove from Favorites</div>}</Button>
 }
 
 export default FavoriteButton;

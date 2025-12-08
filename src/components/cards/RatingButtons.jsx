@@ -85,7 +85,7 @@ function RatingButtons (props) {
         <br/>
             {
                 rating ?
-                <Button onClick={() => handleRating(0)}>Clear my rating</Button>
+                <Button variant={"secondary"} onClick={() => handleRating(0)}>Clear my rating</Button>
                 :
                 <></>
             }
