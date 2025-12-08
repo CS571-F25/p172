@@ -9,7 +9,7 @@ function CategoryCard (props) {
     return <>
         <Card className="cursor-pointer-on-hover" onClick={() => navigate(`/categories/${props.strCategory}`)} style={{margin: ".2rem"}}>
             <Stack className="align-items-center" style={{margin: ".5rem"}}>
-                <Image src={props.strCategoryThumb} alt={`A picture of ${props.strCategory}`} fluid rounded/>
+                <Image src={props.strCategoryThumb} alt={`A picture of representing the ${props.strCategory} category`} fluid rounded/>
                 <h2>{props.strCategory}</h2>
             </Stack>
         </Card>

@@ -202,7 +202,7 @@ function SearchPage () {
                 <FilterDropdown set={handleSetFilter} title={"rating"} options={ratings}/>
             </div>
             <Container fluid>
-                <Row>
+                <Row className="gy-4">
                     {
                         filteredResults.length > 0 ?
                         filteredResults.map(r => 

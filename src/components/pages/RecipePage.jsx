@@ -35,7 +35,6 @@ let ingredientImages = [];
             ingredientImages.push("https://www.themealdb.com/images/ingredients/" + data[`strIngredient${i}`].toLowerCase().replace(/ /g, "_") + "-small.png");
         }
     }
-    console.log(ingredientImages);
 
     useEffect(() => {
         fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + query)
@@ -101,6 +100,7 @@ let ingredientImages = [];
                         <thead>
                             <tr>
                                 <th>
+                                    Icon
                                 </th>
                                 <th>
                                     Amount

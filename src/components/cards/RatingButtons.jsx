@@ -37,7 +37,7 @@ function RatingButtons (props) {
 
     return <>
     <div>
-        <Button onClick={() => handleRating(1)} variant="outline-primary" style={buttonStyle}>
+        <Button aria-label="1 star" onClick={() => handleRating(1)} variant="outline-primary" style={buttonStyle}>
             {
                 rating >= 1 ?
                 <FaStar style={{fontSize: "1.5rem"}}/>
@@ -46,7 +46,7 @@ function RatingButtons (props) {
             }
         </Button>
 
-        <Button onClick={() => handleRating(2)} variant="outline-primary" style={buttonStyle}>
+        <Button aria-label="2 stars" onClick={() => handleRating(2)} variant="outline-primary" style={buttonStyle}>
             {
                 rating >= 2 ?
                 <FaStar style={{fontSize: "1.5rem"}}/>
@@ -55,7 +55,7 @@ function RatingButtons (props) {
             }
         </Button>
 
-        <Button onClick={() => handleRating(3)} variant="outline-primary" style={buttonStyle}>
+        <Button aria-label="3 stars" onClick={() => handleRating(3)} variant="outline-primary" style={buttonStyle}>
             {
                 rating >= 3 ?
                 <FaStar style={{fontSize: "1.5rem"}}/>
@@ -64,7 +64,7 @@ function RatingButtons (props) {
             }
         </Button>
 
-        <Button onClick={() => handleRating(4)} variant="outline-primary" style={buttonStyle}>
+        <Button aria-label="4 stars" onClick={() => handleRating(4)} variant="outline-primary" style={buttonStyle}>
             {
                 rating >= 4 ?
                 <FaStar style={{fontSize: "1.5rem"}}/>
@@ -73,7 +73,7 @@ function RatingButtons (props) {
             }
         </Button>
 
-        <Button onClick={() => handleRating(5)} variant="outline-primary" style={buttonStyle}>
+        <Button aria-label="5 stars" onClick={() => handleRating(5)} variant="outline-primary" style={buttonStyle}>
             {
                 rating >= 5 ?
                 <FaStar style={{fontSize: "1.5rem"}}/>

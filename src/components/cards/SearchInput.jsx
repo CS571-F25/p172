@@ -17,11 +17,14 @@ function SearchInput (props) {
 
     return <>
         <Form className="Row">
-            <Form.Control style={{width: "50rem"}} onKeyPress={event => {
-                            if (event.key === "Enter") {
-                                handleSearchButtonPress();
-                            }}} 
-            ref={searchRef} type="text" placeholder="Search for a recipe..." defaultValue={mountValue}/>
+            <Form.Group>
+                <Form.Label className="visually-hidden">Recipe search bar</Form.Label>
+                <Form.Control style={{width: "50rem"}} onKeyPress={event => {
+                                if (event.key === "Enter") {
+                                    handleSearchButtonPress();
+                                }}} 
+                ref={searchRef} type="text" placeholder="Search for a recipe..." defaultValue={mountValue}/>
+            </Form.Group>
             <Button style={{minWidth: "10rem"}} onClick={handleSearchButtonPress}><div><FaSearch/> Search by Name</div></Button>
         </Form>
     </>
