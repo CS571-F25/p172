@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link, Outlet } from "react-router";
+import { FaHome, FaHeart, FaSearch } from "react-icons/fa";
 
 import CategoriesContext from "./contexts/CategoriesContext";
 
@@ -14,10 +15,10 @@ function Layout(props) {
             <Navbar bg="dark" variant="dark" fixed="top">
                 <Container>
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/favorites">Favorites</Nav.Link>
-                        <Nav.Link as={Link} to="/search">Search</Nav.Link>
-                        <NavDropdown title="Recipe Categories">
+                        <Nav.Link as={Link} to="/"><div><FaHome/> Home</div></Nav.Link>
+                        <Nav.Link as={Link} to="/favorites"><div><FaHeart/> Favorites</div></Nav.Link>
+                        <Nav.Link as={Link} to="/search"><div><FaSearch/> Search</div></Nav.Link>
+                        <NavDropdown title="Categories">
                             {
                                 props.categories.map(cat => {
                                     return <NavDropdown.Item as={Link} to={`categories/${cat.strCategory}`} key={cat.idCategory}>{cat.strCategory}</NavDropdown.Item>
