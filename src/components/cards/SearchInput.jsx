@@ -17,7 +17,7 @@ function SearchInput (props) {
 
     return <>
         <Form className="Row">
-            <Form.Group>
+            <Form.Group controlId="searchQuery">
                 <Form.Label className="visually-hidden">Recipe search bar</Form.Label>
                 <Form.Control style={{width: "50rem"}} onKeyPress={event => {
                                 if (event.key === "Enter") {
@@ -25,7 +25,7 @@ function SearchInput (props) {
                                 }}} 
                 ref={searchRef} type="text" placeholder="Search for a recipe..." defaultValue={mountValue}/>
             </Form.Group>
-            <Button style={{minWidth: "10rem"}} onClick={handleSearchButtonPress}><div><FaSearch/> Search by Name</div></Button>
+            <Button type={"submit"} style={{minWidth: "10rem"}} onClick={handleSearchButtonPress}><div><FaSearch/> Search by Name</div></Button>
         </Form>
     </>
 }

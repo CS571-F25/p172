@@ -18,7 +18,7 @@ function RatingDisplay (props) {
     return <>
         {
             isRated ?
-            <div style={{color: "goldenrod"}}>
+            <div style={{color: "goldenrod"}} aria-label={`${rating} stars`}>
                 {
                     rating >= 1 ?
                     <FaStar/>
