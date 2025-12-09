@@ -16,6 +16,7 @@ function CategoryPage (props) {
     }, [props]);
 
     return <>
+        <title>{props.category.strCategory}</title>
         <div>
             <h1>{props.category.strCategory}</h1>
             <p>{props.category.strCategoryDescription}</p>

@@ -28,6 +28,7 @@ function FavoritesPage () {
     }, []);
 
     return <>
+        <title>Favorites</title>
         <div>
             <h1>Favorites</h1>
             <Container fluid>

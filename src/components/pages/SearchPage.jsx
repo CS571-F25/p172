@@ -160,6 +160,7 @@ function SearchPage () {
     }, [categoryFilter, cuisineFilter, results, ratingFilter]);
 
     return <>
+        <title>Search</title>
         <div>
             <h1>Search</h1>
             <div className="Row" style={{margin: "1rem"}}>

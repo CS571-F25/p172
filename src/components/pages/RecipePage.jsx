@@ -46,6 +46,7 @@ let ingredientImages = [];
     }, []);
 
     return <>
+        <title>{data.strMeal}</title>
         <Stack className="col-md-12 mx-auto align-items-center align-content-center">
             <h1>{data.strMeal}</h1>
             {

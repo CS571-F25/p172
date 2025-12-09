@@ -22,6 +22,7 @@ function HomePage (props) {
     const [categories, setCategories] = useContext(CategoriesContext);
 
     return <>
+        <title>The Recipe Book</title>
         <Stack className="col-md-12 mx-auto align-items-center">
             <h1>The Recipe Book</h1 >
             <p>
